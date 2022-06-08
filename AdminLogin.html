@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang=" ">
+
+    <head>
+        <title>Admin Login</title>
+       <link rel="stylesheet" href="AdminLogin.css"> 
+      <!---- <script src="bus.js"></script>--->
+    </head>
+    <body>
+        <h1>Admin | Login</h1>
+        <div id="lash">
+        <form id="login_form" action="Admin.html" method="Post" name="myform" >
+            <label for="email">Email</label>
+            <input type="text" placeholder="Email" required><br>
+            <label for ="password">Password</label>
+            <input class = " password"type ="password" placeholder="Password" required><br>
+            <label for="confirm Password">Confirm Password</label>
+            <input class=" confirmPassword" type ="password" placeholder="confirm Password" required><br>
+            <input type = "checkbox">
+            <span>Remember Password</span><br>
+    
+                <button class="button" type="submit" >Sign In</button>
+        
+            
+
+       <a href="Register.html">need a account? Register</a><br>
+       <a href="Home.html">Return to Home page</a>
+        </form>
+        <script>
+            document.querySelector('.button').onclick = function()
+            {
+                var password = document.querySelector('.password').value,
+                confirmPassword = document.querySelector('.confirmPassword').value,
+                email=document.querySelector('.email').value;
+                if(password=="")
+                {
+                    alert("Field cannot be empty.")
+                }
+                else if(password != confirmPassword)
+                {
+                    alert("Password does not match try again")
+                }
+                if(email=="")
+                {
+                    alert("Field cannot be empty.")
+                } 
+            }
+        </script>
+    </div>
+    
+  </body>
+</html>

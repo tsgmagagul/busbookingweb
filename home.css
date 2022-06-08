@@ -1,0 +1,72 @@
+*
+{
+    margin: 0;
+    padding:0;
+
+}
+body
+{
+background-image:url(/Capture.GIF)
+height: 100%;
+width:100%;
+background-size: cover;
+position: absolute;
+position: center;
+
+}
+h1{
+    text-align: center;
+}
+h2
+{
+    text-align: center;
+}
+h3
+{
+    text-align:center;
+    color: blue;
+    text-decoration:wavy;
+}
+img
+{
+align-content: center;
+}
+ul
+{
+background-color: aqua;
+color: black;
+list-style-type: none;
+overflow: auto;
+}
+li
+{
+   float: left;
+   text-align: center;
+   padding: 13px; 
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+#Active
+{
+    padding: 5px;
+    background: grey;
+    border-radius: 2px;
+}
+a:hover
+{
+    padding: 5px;
+    background: royalblue;
+    border-radius: 2px;
+}
+#box
+{
+    width:250px;
+    height: 300px;
+    border: 15px black;
+    padding: 50px;
+    margin: 20px;
+}
+

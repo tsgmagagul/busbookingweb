@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="Register.css">
+       <!-- <script src="register.js"></script>-->
+    </head>
+    <body>
+        <h1>CREATE ACCOUNT</h1>
+        <div id="lash">
+    </form>
+    <!--Register Form-->
+    <form id="register_form" method="POST" onsubmit="returnValidation();">
+        <label >First Name:</label>
+        <input type="text" name="fname " placeholder="First Name"required><br>
+        <label>Last Name: </label>
+        <input type="text" name="lname " placeholder="Last Name"required><br>
+        <label>CellPhone:</label>
+        <input type="text" name="cell "placeholder="Cell Phone"required><br>
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Student Email"required><br>
+        <label>Password:</label>
+        <input type="password" name= "password" placeholder="Password" required><br>
+        <lable>confirm Password</lable>
+        <input type="password" name="confirmPassword" placeholder="Confirm Password" required><br>
+        <input type="checkbox">
+        <span>I Agree with T & Cs</span>
+        <button class="button" type="submit" >Register</button>
+       <!--- <input type ="submit" value="Register"><br>--->
+        <br>
+
+        <br>
+
+
+</form>
+<script>
+    document.querySelector('.button').onclick = function()
+    {
+
+        var password = document.querySelector('.password').value,
+        confirmPassword = document.querySelector('.confirmPassword').value,
+        fname = document.querySelector('.fname').value,
+        lname = document.querySelector('.lname').value,
+        cell=  document.querySelector('.cell').value,
+        email = document.querySelector('.email').value
+        ;
+        
+        if(password=="")
+        {
+            alert("Field cannot be empty.")
+        }
+        else if(password != confirmPassword)
+        {
+            alert("Password does not match try again")
+        }
+        else if (fname ==" "||lname==" "||cell==" "||email==" ")
+        {
+                alert("Field must not be empty")
+        } 
+    }       
+</script>
+
+
+    </body>
+</html>

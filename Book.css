@@ -1,0 +1,37 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background: #ecf0fe;
+    text-align: center;
+}
+.label
+{
+
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+#lash
+{
+    width:250px;
+    height: 300px;
+    border: 15px white solid;
+    padding: 50px;
+    margin: 20px;
+}
+input[type=submit]
+{
+    background:aqua;
+    padding: 5px 10px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
